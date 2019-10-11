@@ -28,6 +28,6 @@ class SubjectsController extends Controller
     	$subject->name = request()->subject;
     	$subject->save();
 
-    	return redirect('/teachers');
+    	return redirect('/subjects');
     }
 }

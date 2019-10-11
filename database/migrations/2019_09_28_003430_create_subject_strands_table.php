@@ -13,7 +13,7 @@ class CreateSubjectStrandsTable extends Migration
      */
     public function up()
     {
-        Schema::create('subject-strands', function (Blueprint $table) {
+        Schema::create('subject_strands', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('subject_id');
             $table->integer('strand_id');
@@ -30,6 +30,6 @@ class CreateSubjectStrandsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subject-strands');
+        Schema::dropIfExists('subject_strands');
     }
 }

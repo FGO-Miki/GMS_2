@@ -33,7 +33,7 @@ Route::middleware('auth')->group(function() {
 	Route::get('/sections/add', 'SectionsController@add');
 	Route::post('/sections/store', 'SectionsController@store');
 
-	Route::get('/subject-strands', 'SubjectStrandsController@index');
-	Route::get('/subject-strands/add', 'SubjectStrandsController@add');
-	Route::post('/subject-strands/store', 'SubjectStrandsController@store');
+	Route::get('/subject_strands', 'SubjectStrandsController@index');
+	Route::get('/subject_strands/add', 'SubjectStrandsController@add');
+	Route::post('/subject_strands/store', 'SubjectStrandsController@store');
 });
